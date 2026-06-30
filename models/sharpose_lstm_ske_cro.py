@@ -293,6 +293,7 @@ class KeypointsToSkeletonGCN(nn.Module):
 
         self.gcn2 = GCNConv(hidden_dim, hidden_dim)
         self.norm2 = nn.LayerNorm(hidden_dim)
+        self.fusion_layer = nn.Linear(2 * hidden_dim, input_dim)
 
     def forward(self, keypoints, edge_index):
         """
