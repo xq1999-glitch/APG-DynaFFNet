@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# 模型权重（重点！）
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pb
+
+# 数据集和日志
+/data/
+/logs/
+/output/
+*.log
+
+# 配置文件（避免泄露 API Key）
+.env
+config.local.py
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# 系统文件
+.DS_Store
